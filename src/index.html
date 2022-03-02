@@ -22,6 +22,7 @@
     </style>
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-sm bg-white">
       <div class="container-fluid pt-3 pb-2 d-flex align-items-center">
         <a href="'#" class="text-danger navbar-brand ms-5 px-5">
@@ -65,7 +66,10 @@
         </ul>
       </div>
     </nav>
+
+    <!-- main container -->
     <div class="container-fluid">
+      <!-- container nav -->
       <div class="d-flex justify-content-center flex-wrap mt-3 fw-bold">
         <span class="px-4 py-2">Home</span>
         <span class="px-4 py-2">Categories</span>
@@ -87,32 +91,61 @@
             type="button"
             data-bs-target="#carouselIndicators"
             data-bs-slide-to="0"
-            class="active"
+            class="active border rounded-circle mb-3"
             aria-current="true"
             aria-label="Slide 1"
+            style="height: 10px; width: 10px"
           ></button>
           <button
             type="button"
             data-bs-target="#carouselIndicators"
             data-bs-slide-to="1"
             aria-label="Slide 2"
+            style="height: 10px; width: 10px"
+            class="border rounded-circle mb-3"
           ></button>
           <button
             type="button"
             data-bs-target="#carouselIndicators"
             data-bs-slide-to="2"
             aria-label="Slide 3"
+            style="height: 10px; width: 10px"
+            class="border rounded-circle mb-3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="carousel-inner" style="position: relative; top: 0">
+          <div class="carousel-item active" style="height: 400px">
             <img src="banner.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <button
+                class="btn btn-danger mb-5 px-4 py-2"
+                style="border-radius: 20px"
+              >
+                Browse More
+              </button>
+            </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" style="height: 400px">
             <img src="carousel.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <button
+                class="btn btn-danger mb-5 px-4 py-2"
+                style="border-radius: 20px"
+              >
+                Browse More
+              </button>
+            </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" style="height: 400px">
             <img src="rage.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <button
+                class="btn btn-danger mb-5 px-4 py-2"
+                style="border-radius: 20px"
+              >
+                Browse More
+              </button>
+            </div>
           </div>
         </div>
         <button
@@ -135,8 +168,8 @@
         </button>
       </div>
 
-      <!--  -->
       <!-- products -->
+
       <div
         class="d-flex pb-5 flex-column justify-content-center align-items-center"
       >
@@ -145,7 +178,7 @@
           <div class="col">
             <div class="card" style="height: 350px">
               <img
-                src="book.png"
+                src="book.png "
                 style="height: 200px"
                 class="card-img-top"
                 alt=""
